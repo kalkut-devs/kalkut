@@ -56,7 +56,7 @@ const ProjectDetail = () => {
   }, [id]);
 
   return (
-    <motion.div 
+    <motion.div
       className="project-detail-page"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -74,7 +74,7 @@ const ProjectDetail = () => {
             <p className="detail-desc">{project.desc}</p>
           </motion.div>
         </div>
-        <motion.div 
+        <motion.div
           className="detail-hero-image"
           style={{ backgroundImage: `url(${project.image})` }}
           initial={{ scale: 1.1, opacity: 0 }}
@@ -113,8 +113,13 @@ const ProjectDetail = () => {
               <div className="sidebar-block">
                 <h3 className="mono-tag">Project Links</h3>
                 <div className="sidebar-links">
-                  <a href="#"><Github size={20} /> Repository</a>
-                  <a href="#"><ExternalLink size={20} /> Live Demo</a>
+                  <a href="https://github.com/kalkut-devs/kalkut" target="_blank" rel="noopener noreferrer">
+                    <Github size={20} /> Repository
+                  </a>
+
+                  <a href="https://kalkut-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={20} /> Live Demo
+                  </a>
                 </div>
               </div>
             </aside>
