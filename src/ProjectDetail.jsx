@@ -113,13 +113,13 @@ const ProjectDetail = () => {
               <div className="sidebar-block">
                 <h3 className="mono-tag">Project Links</h3>
                 <div className="sidebar-links">
-                  <a href="https://github.com/kalkut-devs/kalkut" target="_blank" rel="noopener noreferrer">
+                  <button>
                     <Github size={20} /> Repository
-                  </a>
+                  </button>
 
-                  <a href="https://kalkut-cyan.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <button>
                     <ExternalLink size={20} /> Live Demo
-                  </a>
+                  </button>
                 </div>
               </div>
             </aside>
